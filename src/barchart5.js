@@ -34,7 +34,12 @@ export default class BarChart5{
                     '今日头条', '西瓜视频',
                 ]
             },
-            tooltip: {},
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+                    type: 'shadow',        // 默认为直线，可选为：'line' | 'shadow',
+                }
+            },
             grid:{
                 left: '10%',
                 width: '70%',
@@ -43,7 +48,7 @@ export default class BarChart5{
             },
             xAxis: {
                 data:[
-                    2, 4, 6
+                    2, 4, 6, 8, 10, 12
                 ],
                 axisLine: {
                     show: true,
